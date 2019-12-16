@@ -7,18 +7,18 @@ def key_for_min_value(name_hash)
  
   min = 0 
  
- name_hash.each do |key, value|
-  if min == 0 || min > value
-    min = value
-  end  
- end 
+  name_hash.each do |key, value|
+    if min == 0 || min > value
+      min = value
+    end  
+  end 
  
- name_hash.each do |key, value|
-  if value == min 
-    return key 
-  end
- end 
- nil 
+  name_hash.each do |key, value|
+    if value == min 
+      return key 
+    end
+  end 
+  nil 
  
   # values = []
   # name_hash.each do |key, value|
